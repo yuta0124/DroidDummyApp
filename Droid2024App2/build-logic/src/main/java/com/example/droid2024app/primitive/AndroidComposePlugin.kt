@@ -22,6 +22,7 @@ class AndroidComposePlugin : Plugin<Project> {
                 implementation(libs.library("androidxActivityCompose"))
                 implementation(libs.library("androidxLifecycleRuntimeKtx"))
                 implementation(libs.library("composeUi"))
+                implementation(libs.library("hiltNavigationComposePlugin"))
                 // TODO: rin
 //                implementation(libs.library("rin"))
                 implementation(libs.library("composeMaterial3"))
