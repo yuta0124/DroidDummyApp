@@ -10,7 +10,6 @@ class AndroidFeaturePlugin : Plugin<Project> {
         with(target) {
             with(pluginManager) {
                 apply("droid2024app.primitive.androidapplication")
-                apply("droid2024app.primitive.android")
                 apply("droid2024app.primitive.android.kotlin")
                 apply("droid2024app.primitive.android.compose")
                 apply("droid2024app.primitive.android.hilt")

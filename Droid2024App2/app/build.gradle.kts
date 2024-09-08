@@ -1,10 +1,5 @@
 plugins {
-    id("droid2024app.primitive.androidapplication")
-    id("droid2024app.primitive.android.kotlin")
-//    alias(libs.plugins.androidGradlePlugin)
-    alias(libs.plugins.composeCompiler)
-//    alias(libs.plugins.android.application)
-//    alias(libs.plugins.kotlin.android)
+    id("droid2024app.convention.androidfeature")
 }
 
 android {
@@ -32,33 +27,10 @@ android {
             )
         }
     }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
-    }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-}
-
-dependencies {
-    implementation(libs.androidxCoreKtx)
-    implementation(libs.androidxLifecycleRuntimeKtx)
-    implementation(libs.androidxActivityCompose)
-    implementation(platform(libs.composeBom))
-    implementation(libs.composeUi)
-    implementation(libs.composeUiGraphics)
-    implementation(libs.composeUiToolingPreview)
-    implementation(libs.composeMaterial3)
-    implementation(libs.junit)
-    androidTestImplementation(libs.androidxJunit)
-    androidTestImplementation(libs.androidxEspressoCore)
-    androidTestImplementation(platform(libs.composeBom))
-    androidTestImplementation(libs.composeUiTestJunit4)
-    debugImplementation(libs.composeUiTooling)
-    debugImplementation(libs.composeUiTestManifest)
 }

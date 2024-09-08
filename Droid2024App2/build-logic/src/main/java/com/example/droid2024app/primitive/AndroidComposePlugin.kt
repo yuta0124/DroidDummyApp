@@ -19,6 +19,8 @@ class AndroidComposePlugin : Plugin<Project> {
             dependencies {
                 implementation(platform(libs.library("composeBom")))
                 implementation(libs.library("androidxCoreKtx"))
+                implementation(libs.library("androidxActivityCompose"))
+                implementation(libs.library("androidxLifecycleRuntimeKtx"))
                 implementation(libs.library("composeUi"))
                 // TODO: rin
 //                implementation(libs.library("rin"))
