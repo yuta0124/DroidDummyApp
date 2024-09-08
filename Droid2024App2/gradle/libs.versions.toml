@@ -54,7 +54,7 @@ daggerHiltAndroidCompiler = { module = "com.google.dagger:hilt-android-compiler"
 androidGradlePlugin = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 androidGradleLibraryPlugin = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 kotlinGradlePlugin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-# kotlin 2.0
+# kotlin 2.0からトップレベルのgradleでインストールする必要がある
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 hiltGradlePlugin = { id = "com.google.dagger.hilt.android", version.ref = "dagger" }
 kspGradlePlugin = { id = "com.google.devtools.ksp", version.ref = "ksp" }

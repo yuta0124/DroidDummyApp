@@ -20,29 +20,29 @@ dependencies {
 
 gradlePlugin {
     plugins {
-//        register("androidApplication") {
-//            id = "droid2024app.primitive.androidapplication"
-//            implementationClass = "com.example.droid2024app.primitive.AndroidApplicationPlugin"
-//        }
-//        register("android") {
-//            id = "droid2024app.primitive.android"
-//            implementationClass = "com.example.droid2024app.primitive.AndroidPlugin"
-//        }
-//        register("androidKotlin") {
-//            id = "droid2024app.primitive.android.kotlin"
-//            implementationClass = "com.example.droid2024app.primitive.AndroidKotlinPlugin"
-//        }
-//        register("androidCompose") {
-//            id = "droid2024app.primitive.android.compose"
-//            implementationClass = "com.example.droid2024app.primitive.AndroidComposePlugin"
-//        }
-//        register("androidHilt") {
-//            id = "droid2024app.primitive.android.hilt"
-//            implementationClass = "com.example.droid2024app.primitive.AndroidHiltPlugin"
-//        }
-//        register("androidFeature") {
-//            id = "droid2024app.convention.androidfeature"
-//            implementationClass = "com.example.droid2024app.convention.AndroidFeaturePlugin"
-//        }
+        register("androidApplication") {
+            id = "droid2024app.primitive.androidapplication"
+            implementationClass = "com.example.droid2024app.primitive.AndroidApplicationPlugin"
+        }
+        register("android") {
+            id = "droid2024app.primitive.android"
+            implementationClass = "com.example.droid2024app.primitive.AndroidPlugin"
+        }
+        register("androidKotlin") {
+            id = "droid2024app.primitive.android.kotlin"
+            implementationClass = "com.example.droid2024app.primitive.AndroidKotlinPlugin"
+        }
+        register("androidCompose") {
+            id = "droid2024app.primitive.android.compose"
+            implementationClass = "com.example.droid2024app.primitive.AndroidComposePlugin"
+        }
+        register("androidHilt") {
+            id = "droid2024app.primitive.android.hilt"
+            implementationClass = "com.example.droid2024app.primitive.AndroidHiltPlugin"
+        }
+        register("androidFeature") {
+            id = "droid2024app.convention.androidfeature"
+            implementationClass = "com.example.droid2024app.convention.AndroidFeaturePlugin"
+        }
     }
 }

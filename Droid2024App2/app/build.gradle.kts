@@ -1,18 +1,19 @@
 plugins {
-    alias(libs.plugins.androidGradlePlugin)
-    alias(libs.plugins.kotlinGradlePlugin)
+    id("droid2024app.primitive.androidapplication")
+    id("droid2024app.primitive.android.kotlin")
+//    alias(libs.plugins.androidGradlePlugin)
+    alias(libs.plugins.composeCompiler)
 //    alias(libs.plugins.android.application)
 //    alias(libs.plugins.kotlin.android)
 }
 
 android {
     namespace = "com.example.droid2024app"
-    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.droid2024app"
-        minSdk = 24
-        targetSdk = 34
+//        minSdk = 24
+//        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -31,13 +32,6 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
     buildFeatures {
         compose = true
     }
@@ -52,20 +46,19 @@ android {
 }
 
 dependencies {
-
-//    implementation(libs.androidx.core.ktx)
-//    implementation(libs.androidx.lifecycle.runtime.ktx)
-//    implementation(libs.androidx.activity.compose)
-//    implementation(platform(libs.androidx.compose.bom))
-//    implementation(libs.androidx.ui)
-//    implementation(libs.androidx.ui.graphics)
-//    implementation(libs.androidx.ui.tooling.preview)
-//    implementation(libs.androidx.material3)
-//    testImplementation(libs.junit)
-//    androidTestImplementation(libs.androidx.junit)
-//    androidTestImplementation(libs.androidx.espresso.core)
-//    androidTestImplementation(platform(libs.androidx.compose.bom))
-//    androidTestImplementation(libs.androidx.ui.test.junit4)
-//    debugImplementation(libs.androidx.ui.tooling)
-//    debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.androidxCoreKtx)
+    implementation(libs.androidxLifecycleRuntimeKtx)
+    implementation(libs.androidxActivityCompose)
+    implementation(platform(libs.composeBom))
+    implementation(libs.composeUi)
+    implementation(libs.composeUiGraphics)
+    implementation(libs.composeUiToolingPreview)
+    implementation(libs.composeMaterial3)
+    implementation(libs.junit)
+    androidTestImplementation(libs.androidxJunit)
+    androidTestImplementation(libs.androidxEspressoCore)
+    androidTestImplementation(platform(libs.composeBom))
+    androidTestImplementation(libs.composeUiTestJunit4)
+    debugImplementation(libs.composeUiTooling)
+    debugImplementation(libs.composeUiTestManifest)
 }
