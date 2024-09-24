@@ -5,7 +5,7 @@ coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
-lifecycleRuntimeKtx = "2.8.4"
+lifecycleRuntimeKtx = "2.8.5"
 activityCompose = "1.9.1"
 composeBom = "2024.06.00"
 appcompat = "1.7.0"
@@ -24,6 +24,7 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidxJunit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidxEspressoCore = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidxLifecycleRuntimeKtx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidxLifecycleRuntimeCompose = {group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx"}
 androidxActivityCompose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 composeBom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 composeUi = { group = "androidx.compose.ui", name = "ui" }
@@ -36,6 +37,7 @@ composeMaterial3 = { group = "androidx.compose.material3", name = "material3" }
 androidxAppcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 composeCompilerGradlePlugin = { group = "org.jetbrains.kotlin", name = "compose-compiler-gradle-plugin", version.ref = "kotlin" }
+javaPoet = { module = "com.squareup:javapoet", version = "1.13.0" }
 
 androidGradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
 kotlinGradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }

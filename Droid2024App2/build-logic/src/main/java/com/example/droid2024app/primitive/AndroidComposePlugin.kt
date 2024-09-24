@@ -16,15 +16,15 @@ class AndroidComposePlugin : Plugin<Project> {
             composeCompiler {
                 enableStrongSkippingMode.set(true)
             }
+            // TODO: Circuit
             dependencies {
                 implementation(platform(libs.library("composeBom")))
                 implementation(libs.library("androidxCoreKtx"))
                 implementation(libs.library("androidxActivityCompose"))
                 implementation(libs.library("androidxLifecycleRuntimeKtx"))
+                implementation(libs.library("androidxLifecycleRuntimeCompose"))
                 implementation(libs.library("composeUi"))
                 implementation(libs.library("hiltNavigationComposePlugin"))
-                // TODO: rin
-//                implementation(libs.library("rin"))
                 implementation(libs.library("composeMaterial3"))
                 implementation(libs.library("composeUiToolingPreview"))
                 implementation(libs.library("androidxLifecycleRuntimeKtx"))

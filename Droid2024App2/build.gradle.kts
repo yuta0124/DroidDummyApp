@@ -5,3 +5,13 @@ plugins {
     alias(libs.plugins.composeCompiler) apply false
     alias(libs.plugins.androidGradleLibraryPlugin) apply false
 }
+
+buildscript {
+    configurations.all {
+        resolutionStrategy.eachDependency {
+            when {
+                requested.name == "javapoet" -> useVersion("1.13.0")
+            }
+        }
+    }
+}

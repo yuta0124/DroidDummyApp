@@ -13,6 +13,7 @@ class AndroidFeaturePlugin : Plugin<Project> {
                 apply("droid2024app.primitive.android.kotlin")
                 apply("droid2024app.primitive.android.compose")
                 apply("droid2024app.primitive.android.hilt")
+                apply("droid2024app.primitive.detekt")
             }
 
             tasks.withType<KotlinCompile>().configureEach {

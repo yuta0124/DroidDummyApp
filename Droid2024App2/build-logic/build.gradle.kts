@@ -16,6 +16,8 @@ java {
 
 dependencies {
     implementation(libs.bundles.plugins)
+    // https://github.com/google/dagger/issues/3068#issuecomment-1470534930
+    implementation(libs.javaPoet)
 }
 
 gradlePlugin {
@@ -39,6 +41,10 @@ gradlePlugin {
         register("androidHilt") {
             id = "droid2024app.primitive.android.hilt"
             implementationClass = "com.example.droid2024app.primitive.AndroidHiltPlugin"
+        }
+        register("detekt") {
+            id = "droid2024app.primitive.detekt"
+            implementationClass = "com.example.droid2024app.primitive.DetektPlugin"
         }
         register("androidFeature") {
             id = "droid2024app.convention.androidfeature"
